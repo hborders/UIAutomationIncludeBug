@@ -6,6 +6,21 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		5A96176C1638804A00052818 /* TestLoadsAThenB.js */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 5A96176D1638804A00052818 /* Build configuration list for PBXAggregateTarget "TestLoadsAThenB.js" */;
+			buildPhases = (
+				5A9617721638805700052818 /* ShellScript */,
+			);
+			dependencies = (
+				5A9617711638805300052818 /* PBXTargetDependency */,
+			);
+			name = TestLoadsAThenB.js;
+			productName = "Run TestLoadsAThenB.js";
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		5A96174816387ED500052818 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A96174716387ED500052818 /* UIKit.framework */; };
 		5A96174A16387ED500052818 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A96174916387ED500052818 /* Foundation.framework */; };
@@ -16,7 +31,20 @@
 		5A96175A16387ED500052818 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A96175916387ED500052818 /* Default.png */; };
 		5A96175C16387ED500052818 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A96175B16387ED500052818 /* Default@2x.png */; };
 		5A96175E16387ED500052818 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A96175D16387ED500052818 /* Default-568h@2x.png */; };
+		5A9617741638808100052818 /* RunUIA.bash in Resources */ = {isa = PBXBuildFile; fileRef = 5A9617731638808100052818 /* RunUIA.bash */; };
+		5A96177A1638894800052818 /* Import.js in Resources */ = {isa = PBXBuildFile; fileRef = 5A9617791638894800052818 /* Import.js */; };
+		5A96177E163889BD00052818 /* TestLoadsImport.js in Resources */ = {isa = PBXBuildFile; fileRef = 5A96177D163889BD00052818 /* TestLoadsImport.js */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5A9617701638805300052818 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5A96173A16387ED500052818 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5A96174216387ED500052818;
+			remoteInfo = UIAutomationIncludeBug;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		5A96174316387ED500052818 /* UIAutomationIncludeBug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIAutomationIncludeBug.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -32,6 +60,13 @@
 		5A96175916387ED500052818 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		5A96175B16387ED500052818 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		5A96175D16387ED500052818 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		5A96176416387F3500052818 /* A.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = A.js; path = UIAutomationIncludeBug/A.js; sourceTree = "<group>"; };
+		5A96176616387F4400052818 /* B.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = B.js; path = UIAutomationIncludeBug/B.js; sourceTree = "<group>"; };
+		5A9617731638808100052818 /* RunUIA.bash */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = RunUIA.bash; sourceTree = "<group>"; };
+		5A961775163886BB00052818 /* TestLoadsAThenB.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = TestLoadsAThenB.js; path = UIAutomationIncludeBug/TestLoadsAThenB.js; sourceTree = "<group>"; };
+		5A961776163886BB00052818 /* TestLoadsB.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = TestLoadsB.js; path = UIAutomationIncludeBug/TestLoadsB.js; sourceTree = "<group>"; };
+		5A9617791638894800052818 /* Import.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = Import.js; path = UIAutomationIncludeBug/Import.js; sourceTree = "<group>"; };
+		5A96177D163889BD00052818 /* TestLoadsImport.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = TestLoadsImport.js; path = UIAutomationIncludeBug/TestLoadsImport.js; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +86,10 @@
 		5A96173816387ED500052818 = {
 			isa = PBXGroup;
 			children = (
-				5A96174D16387ED500052818 /* UIAutomationIncludeBug */,
 				5A96174616387ED500052818 /* Frameworks */,
 				5A96174416387ED500052818 /* Products */,
+				5A96176B16387F9500052818 /* UIA */,
+				5A96174D16387ED500052818 /* UIAutomationIncludeBug */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,6 +117,7 @@
 				5A96175616387ED500052818 /* HBAppDelegate.h */,
 				5A96175716387ED500052818 /* HBAppDelegate.m */,
 				5A96174E16387ED500052818 /* Supporting Files */,
+				5A9617731638808100052818 /* RunUIA.bash */,
 			);
 			path = UIAutomationIncludeBug;
 			sourceTree = "<group>";
@@ -97,6 +134,19 @@
 				5A96175D16387ED500052818 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5A96176B16387F9500052818 /* UIA */ = {
+			isa = PBXGroup;
+			children = (
+				5A96176416387F3500052818 /* A.js */,
+				5A96176616387F4400052818 /* B.js */,
+				5A961775163886BB00052818 /* TestLoadsAThenB.js */,
+				5A961776163886BB00052818 /* TestLoadsB.js */,
+				5A9617791638894800052818 /* Import.js */,
+				5A96177D163889BD00052818 /* TestLoadsImport.js */,
+			);
+			name = UIA;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,6 +192,7 @@
 			projectRoot = "";
 			targets = (
 				5A96174216387ED500052818 /* UIAutomationIncludeBug */,
+				5A96176C1638804A00052818 /* TestLoadsAThenB.js */,
 			);
 		};
 /* End PBXProject section */
@@ -155,10 +206,29 @@
 				5A96175A16387ED500052818 /* Default.png in Resources */,
 				5A96175C16387ED500052818 /* Default@2x.png in Resources */,
 				5A96175E16387ED500052818 /* Default-568h@2x.png in Resources */,
+				5A9617741638808100052818 /* RunUIA.bash in Resources */,
+				5A96177A1638894800052818 /* Import.js in Resources */,
+				5A96177E163889BD00052818 /* TestLoadsImport.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5A9617721638805700052818 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "bash \"$PROJECT_DIR\"/\"$PROJECT_NAME\"/RunUIA.bash \"$PROJECT_DIR\"/\"$PROJECT_NAME\"/\"$TARGETNAME\"";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5A96173F16387ED500052818 /* Sources */ = {
@@ -171,6 +241,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5A9617711638805300052818 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5A96174216387ED500052818 /* UIAutomationIncludeBug */;
+			targetProxy = 5A9617701638805300052818 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		5A96175016387ED500052818 /* InfoPlist.strings */ = {
@@ -258,6 +336,20 @@
 			};
 			name = Release;
 		};
+		5A96176E1638804A00052818 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5A96176F1638804A00052818 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -275,6 +367,14 @@
 			buildConfigurations = (
 				5A96176216387ED500052818 /* Debug */,
 				5A96176316387ED500052818 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5A96176D1638804A00052818 /* Build configuration list for PBXAggregateTarget "TestLoadsAThenB.js" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A96176E1638804A00052818 /* Debug */,
+				5A96176F1638804A00052818 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
